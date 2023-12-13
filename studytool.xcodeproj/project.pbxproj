@@ -14,6 +14,13 @@
 		2FE8C43C2B2951390035A168 /* studytoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C43B2B2951390035A168 /* studytoolTests.swift */; };
 		2FE8C4462B2951390035A168 /* studytoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4452B2951390035A168 /* studytoolUITests.swift */; };
 		2FE8C4482B2951390035A168 /* studytoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4472B2951390035A168 /* studytoolUITestsLaunchTests.swift */; };
+		2FE8C4562B2951E30035A168 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4552B2951E30035A168 /* Card.swift */; };
+		2FE8C4582B295C5D0035A168 /* CardViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4572B295C5D0035A168 /* CardViewer.swift */; };
+		2FE8C45B2B2961D40035A168 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C45A2B2961D40035A168 /* CustomButtonStyle.swift */; };
+		2FE8C4602B29683B0035A168 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C45F2B29683B0035A168 /* Background.swift */; };
+		2FE8C4632B296DAE0035A168 /* DeckViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4622B296DAE0035A168 /* DeckViewer.swift */; };
+		2FE8C4652B296ED20035A168 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4642B296ED20035A168 /* CardData.swift */; };
+		2FE8C4672B296F4C0035A168 /* TestDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE8C4662B296F4C0035A168 /* TestDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		2FE8C4412B2951390035A168 /* studytoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studytoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE8C4452B2951390035A168 /* studytoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studytoolUITests.swift; sourceTree = "<group>"; };
 		2FE8C4472B2951390035A168 /* studytoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studytoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FE8C4552B2951E30035A168 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2FE8C4572B295C5D0035A168 /* CardViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewer.swift; sourceTree = "<group>"; };
+		2FE8C45A2B2961D40035A168 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		2FE8C45F2B29683B0035A168 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		2FE8C4622B296DAE0035A168 /* DeckViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewer.swift; sourceTree = "<group>"; };
+		2FE8C4642B296ED20035A168 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		2FE8C4662B296F4C0035A168 /* TestDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +109,7 @@
 		2FE8C4282B2951380035A168 /* studytool */ = {
 			isa = PBXGroup;
 			children = (
+				2FE8C45C2B29681D0035A168 /* Components */,
 				2FE8C4292B2951380035A168 /* studytoolApp.swift */,
 				2FE8C42B2B2951380035A168 /* ContentView.swift */,
 				2FE8C42D2B2951390035A168 /* Assets.xcassets */,
@@ -127,6 +142,52 @@
 				2FE8C4472B2951390035A168 /* studytoolUITestsLaunchTests.swift */,
 			);
 			path = studytoolUITests;
+			sourceTree = "<group>";
+		};
+		2FE8C4542B2951C00035A168 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				2FE8C4552B2951E30035A168 /* Card.swift */,
+				2FE8C4572B295C5D0035A168 /* CardViewer.swift */,
+				2FE8C4642B296ED20035A168 /* CardData.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		2FE8C4592B2961BC0035A168 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2FE8C45A2B2961D40035A168 /* CustomButtonStyle.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		2FE8C45C2B29681D0035A168 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FE8C4612B296D9F0035A168 /* Decks */,
+				2FE8C45D2B2968290035A168 /* Background */,
+				2FE8C4592B2961BC0035A168 /* Buttons */,
+				2FE8C4542B2951C00035A168 /* Cards */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2FE8C45D2B2968290035A168 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				2FE8C45F2B29683B0035A168 /* Background.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		2FE8C4612B296D9F0035A168 /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				2FE8C4622B296DAE0035A168 /* DeckViewer.swift */,
+				2FE8C4662B296F4C0035A168 /* TestDeck.swift */,
+			);
+			path = Decks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FE8C42C2B2951380035A168 /* ContentView.swift in Sources */,
+				2FE8C4562B2951E30035A168 /* Card.swift in Sources */,
+				2FE8C45B2B2961D40035A168 /* CustomButtonStyle.swift in Sources */,
 				2FE8C42A2B2951380035A168 /* studytoolApp.swift in Sources */,
+				2FE8C4582B295C5D0035A168 /* CardViewer.swift in Sources */,
+				2FE8C4652B296ED20035A168 /* CardData.swift in Sources */,
+				2FE8C4672B296F4C0035A168 /* TestDeck.swift in Sources */,
+				2FE8C4602B29683B0035A168 /* Background.swift in Sources */,
+				2FE8C4632B296DAE0035A168 /* DeckViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
