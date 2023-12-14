@@ -10,13 +10,12 @@ import SwiftUI
 struct CardViewer: View {
     typealias ProgressHandler = (String) -> Void
     
-    var frontText: String;
-    var backText: String;
+    var cardData: CardData;
     var progressHandler: ProgressHandler;
     
     var body: some View {
         VStack(alignment: .center) {
-            Card(frontText: frontText, backText: backText)
+            Card(frontText: cardData.frontText, backText: cardData.backText)
             HStack {
                 Button(action: {
                     progressHandler("v_bad")
@@ -55,7 +54,7 @@ private func dummyProgressHandler(progress: String) {
 #Preview {
     ZStack {
         Background()
-        CardViewer(frontText: "Something", backText: "Or other.", progressHandler: dummyProgressHandler)
+        CardViewer(cardData: CardData(frontText: "Hello", backText: "There", cardID: UUID()), progressHandler: dummyProgressHandler)
             .padding()
     }
 }
